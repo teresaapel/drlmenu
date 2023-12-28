@@ -6,6 +6,12 @@ body {
   background: #f4f4f4;
 }
 
+a {
+  text-decoration: none; /* Removes underline from all links */
+  color: inherit; /* Inherits text color from parent */
+}
+
+
 .sidebar {
   width: 420px;
   background: linear-gradient(to bottom, #005288 0%, #ffffff 100%);
@@ -48,7 +54,7 @@ body {
   /* This will put space between the buttons */
 }
 
-.message-btn {
+.message-btn, a.message-btn {
   text-align: center;
   font-size: 14px;
   font-weight: 700;
@@ -82,9 +88,14 @@ body {
   /* Allows the text container to grow and take up 80% of the width */
 }
 
+.message-text:hover {
+  text-decoration: underline;
+}
+
 .message-arrow {
   /* No specific width needed, it will take the content's width */
   margin-left: auto;
+  margin-right: 10px;
   /* Pushes the arrow to the right */
   transition: transform 0.3s ease;
   /* Smooth transition for the transform */
@@ -155,28 +166,40 @@ body {
 
 .footer {
   display: flex;
-  justify-content: center; /* Space out the buttons evenly */
-  align-items: center; /* Align the items vertically */
+  justify-content: center;
+  /* Space out the buttons evenly */
+  align-items: center;
+  /* Align the items vertically */
   padding: 0px;
 }
 
-.footer-btn {
+.footer-btn, a.footer-btn {
   display: flex;
-  flex-direction: column; /* Stack icon and text */
+  flex-direction: column;
+  /* Stack icon and text */
   text-align: center;
-  align-items: center; /* Center align items */
+  align-items: center;
+  /* Center align items */
   padding: 5px;
-  text-decoration: none; /* Remove underline from text */
-  color: #333; /* Text color */
-  transition: color 0.3s; /* Transition for hover effect */
+  text-decoration: none;
+  /* Remove underline from text */
+  color: #333;
+  /* Text color */
+  transition: color 0.3s;
+  /* Transition for hover effect */
   margin: 0 30px;
+  cursor: pointer;
+
 }
 
 .footer-btn span {
-  margin-top: 5px; /* Space between icon and text */
-  font-size: 14px; /* Font size for the text */
+  margin-top: 5px;
+  /* Space between icon and text */
+  font-size: 14px;
+  /* Font size for the text */
 }
 
 .footer-btn:hover {
-  color: #005288; /* Change color on hover */
+  color: #005288;
+  /* Change color on hover */
 }
