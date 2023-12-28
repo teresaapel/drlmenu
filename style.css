@@ -1,187 +1,182 @@
 body {
-    font-family: 'Source Sans Pro', sans-serif;
-    /* Apply Source Sans Pro font */
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
-  }
-  
-  .sidebar {
-    width: 439px;
-    background: linear-gradient(to bottom, #005288 0%, #ffffff 100%);
-    padding: 10px;
-  }
-  
-  .sidebar-header {
-    /* background: #005288; */
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .sidebar-header h2 {
-    margin: 0;
-  }
-  
-  .sidebar-header p {
-    margin: 10px 0 0;
-  }
-  
-  .sidebar-menu {
-    margin: 20px 20px 20px 20px;
-  }
-  
-  
-  /* Styles for the message container and elements within it */
-  .message-container {
-    background: #0078ae;
-    /* Adjust the color to match the provided image */
-    border-radius: 25px;
-    /* Rounded borders for the outer container */
-    padding: 10px;
-    text-align: left;
-    margin-bottom: 20px;
-  }
-  
-  /* ... rest of your CSS */
-  .button-row {
-    display: flex;
-    /* This will lay out its children side by side */
-    justify-content: space-between;
-    /* This will put space between the buttons */
-  }
-  
-  .message-btn {
-    text-align: center;
-    font-size: 14px;
-    font-weight: 700;
-    display: flex;
-    /* Use flexbox to align text and arrow */
-    align-items: center;
-    /* Center items vertically */
-    justify-content: space-between;
-    /* Space between text and arrow */
-    padding: 10px;
-    background: #0078ae;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 20px;
-    /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    /* Optional: adds shadow for depth */
-    margin-top: 20px;
-    /* Spacing from the next element */
-    padding-left: 20px;
-    text-decoration: none;
-    width: 38%
-      /* Remove underline from links */
-  }
-  
-  .message-text {
-    flex-grow: 0.8;
-    padding-left: 8px;
-    padding-right: 12px;
-    /* Allows the text container to grow and take up 80% of the width */
-  }
-  
-  .message-arrow {
-    /* No specific width needed, it will take the content's width */
-    margin-left: auto;
-    /* Pushes the arrow to the right */
-    transition: transform 0.3s ease;
-    /* Smooth transition for the transform */
-  }
-  
-  .message-arrow:hover {
-    transform: scale(1.4);
-    /* Scales the arrow up to 120% of its original size */
-  }
-  
-  
-  
-  .search-container {
-    position: relative;
-    margin-bottom: 20px;
-  }
-  
-  .search-container input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  .sidebar-group {
-    background: #f9f9f9;
-    border-radius: 10px;
-  }
-  
-  .sidebar-group-title {
-    text-align: left;
-    font-weight: 800;
-    padding: 10px;
-    color: #333;
-    font-size: 15px;
-  }
-  
-  .sidebar-item {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    color: #333;
-    text-decoration: none;
-    border-bottom: 1px solid #ddd;
-    border-radius: 10px;
-    font-size: 13px;
-    font-weight: 300;
-  }
-  
-  .sidebar-item:hover {
-    background: #edeeee;
-  }
-  
-  .item-text {
-    flex: 9;
-    /* takes 90% of the space */
-  
-    /* additional styling if needed */
-  }
-  
-  .item-arrow {
-    flex: 1;
-    /* takes the remaining 10% of the space */
-    text-align: right;
-  
-    /* additional styling if needed */
-  }
-  
-  .footer {
-    display: flex;
-    justify-content: space-between; /* Space out the buttons evenly */
-    align-items: center; /* Align the items vertically */
-    padding: 0px;
-  }
-  
-  .footer-btn {
-    display: flex;
-    flex-direction: column; /* Stack icon and text */
-    text-align: center;
-    align-items: center; /* Center align items */
-    padding: 5px;
-    text-decoration: none; /* Remove underline from text */
-    color: #333; /* Text color */
-    transition: color 0.3s; /* Transition for hover effect */
-    margin: 0 40px; /* Add 20 pixels of margin to the left and right of each button */
-  
-  }
-  
-  .footer-btn span {
-    margin-top: 5px; /* Space between icon and text */
-    font-size: 14px; /* Font size for the text */
-  }
-  
-  .footer-btn:hover {
-    color: #005288; /* Change color on hover */
-  }
-  
+  font-family: 'Montserrat', sans-serif;
+  /* Apply Source Sans Pro font */
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+.sidebar {
+  width: 420px;
+  background: linear-gradient(to bottom, #005288 0%, #ffffff 100%);
+  padding: 10px;
+}
+
+.sidebar-header {
+  /* background: #005288; */
+  color: white;
+  padding: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.sidebar-header h2 {
+  margin: 0;
+}
+
+.sidebar-menu {
+  margin: 20px 20px 20px 20px;
+}
+
+
+/* Styles for the message container and elements within it */
+.message-container {
+  background: #0078ae;
+  /* Adjust the color to match the provided image */
+  border-radius: 25px;
+  /* Rounded borders for the outer container */
+  padding: 10px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* ... rest of your CSS */
+.button-row {
+  display: flex;
+  /* This will lay out its children side by side */
+  justify-content: space-between;
+  /* This will put space between the buttons */
+}
+
+.message-btn {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  /* Use flexbox to align text and arrow */
+  align-items: center;
+  /* Center items vertically */
+  justify-content: space-between;
+  /* Space between text and arrow */
+  padding: 10px;
+  background: #0078ae;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  /* Optional: adds shadow for depth */
+  margin-bottom: 30px;
+  /* Spacing from the next element */
+  padding-left: 20px;
+  text-decoration: none;
+  width: 38%
+    /* Remove underline from links */
+}
+
+.message-text {
+  flex-grow: 0.8;
+  padding-left: 8px;
+  padding-right: 12px;
+  /* Allows the text container to grow and take up 80% of the width */
+}
+
+.message-arrow {
+  /* No specific width needed, it will take the content's width */
+  margin-left: auto;
+  /* Pushes the arrow to the right */
+  transition: transform 0.3s ease;
+  /* Smooth transition for the transform */
+}
+
+.message-arrow:hover {
+  transform: scale(1.4);
+  /* Scales the arrow up to 120% of its original size */
+}
+
+
+
+.search-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.sidebar-group {
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+.sidebar-group-title {
+  text-align: left;
+  font-weight: 800;
+  padding: 10px;
+  color: #333;
+  font-size: 15px;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.sidebar-item:hover {
+  background: #edeeee;
+}
+
+.item-text {
+  flex: 9;
+  /* takes 90% of the space */
+
+  /* additional styling if needed */
+}
+
+.item-arrow {
+  flex: 1;
+  /* takes the remaining 10% of the space */
+  text-align: right;
+
+  /* additional styling if needed */
+}
+
+.footer {
+  display: flex;
+  justify-content: center; /* Space out the buttons evenly */
+  align-items: center; /* Align the items vertically */
+  padding: 0px;
+}
+
+.footer-btn {
+  display: flex;
+  flex-direction: column; /* Stack icon and text */
+  text-align: center;
+  align-items: center; /* Center align items */
+  padding: 5px;
+  text-decoration: none; /* Remove underline from text */
+  color: #333; /* Text color */
+  transition: color 0.3s; /* Transition for hover effect */
+  margin: 0 30px;
+}
+
+.footer-btn span {
+  margin-top: 5px; /* Space between icon and text */
+  font-size: 14px; /* Font size for the text */
+}
+
+.footer-btn:hover {
+  color: #005288; /* Change color on hover */
+}
