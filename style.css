@@ -126,7 +126,7 @@ a {
   border-radius: 10px;
 }
 
-.sidebar-group-title {
+.sidebar-group-title, a.sidebar-group-title{
   text-align: left;
   font-weight: 800;
   padding: 10px;
