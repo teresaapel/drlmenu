@@ -7,8 +7,10 @@ body {
 }
 
 a {
-  text-decoration: none; /* Removes underline from all links */
-  color: inherit; /* Inherits text color from parent */
+  text-decoration: none;
+  /* Removes underline from all links */
+  color: inherit;
+  /* Inherits text color from parent */
 }
 
 
@@ -55,7 +57,8 @@ a {
   /* This will put space between the buttons */
 }
 
-.message-btn, a.message-btn {
+.message-btn,
+a.message-btn {
   text-align: center;
   font-size: 14px;
   font-weight: 700;
@@ -126,7 +129,8 @@ a {
   border-radius: 10px;
 }
 
-.sidebar-group-title, a.sidebar-group-title{
+.sidebar-group-title,
+a.sidebar-group-title {
   text-align: left;
   font-weight: 800;
   padding: 10px;
@@ -174,7 +178,8 @@ a {
   padding: 0px;
 }
 
-.footer-btn, a.footer-btn {
+.footer-btn,
+a.footer-btn {
   display: flex;
   flex-direction: column;
   /* Stack icon and text */
